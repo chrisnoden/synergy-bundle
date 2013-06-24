@@ -1,0 +1,25 @@
+{
+    "name": "chrisnoden/synergy-bundle",
+    "type": "project",
+    "description": "Synergy MVC Framework Bundle",
+    "keywords": ["mvc", "framework", "symfony"],
+    "homepage": "https://github.com/chrisnoden/synergy-bundle",
+    "license": "Apache-2.0",
+    "version": "0.1.0-dev",
+    "minimum-stability": "dev",
+    "authors": [
+        { "name": "Chris Noden", "email": "chris.noden@gmail.com", "homepage": "http://www.chrisnoden.com" }
+    ],
+    "require": {
+        "php": ">=5.3.21",
+        "chrisnoden/synergy": "dev-master",
+        "chrisnoden/talkback": ">=1.0.2",
+        "mobiledetect/mobiledetectlib": "2.6.*",
+        "propel/propel1": "1.6.*",
+        "smarty/smarty": "3.1.*",
+        "twig/twig": "1.13.*"
+    },
+    "autoload": {
+        "psr-0": { "TestProject": "app/" }
+    }
+}

@@ -1,0 +1,18 @@
+# routes.yml
+routeMobile:
+    path:   /fooz
+    defaults: { _controller: TestProject\TestController:mobile }
+    options:
+        os: android
+
+routeIOS:
+    path:   /fooz
+    defaults: { _controller: TestProject\TestController:ios }
+    options:
+        device: mobile
+        os: iOS
+        type: iPhone
+
+route1:
+    path:     /foo/{name}
+    defaults: { _controller: TestProject\TestController:foo }
