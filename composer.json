@@ -10,14 +10,18 @@
     "authors": [
         { "name": "Chris Noden", "email": "chris.noden@gmail.com", "homepage": "http://www.chrisnoden.com" }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/chrisnoden/Propel"
+        }
+    ],
     "require": {
         "php": ">=5.3.21",
         "chrisnoden/synergy": "dev-master",
         "chrisnoden/talkback": ">=1.0.2",
         "mobiledetect/mobiledetectlib": "2.6.*",
-        "propel/propel1": "1.6.*",
-        "smarty/smarty": "3.1.*",
-        "twig/twig": "1.13.*"
+        "propel/propel1": "1.6.*"
     },
     "autoload": {
         "psr-0": { "TestProject": "app/" }

@@ -10,8 +10,8 @@ namespace TestProject;
 
 use Synergy\Controller\Controller;
 use Synergy\Logger\Logger;
-use Synergy\Project\Web\Template\SmartyTemplate;
-use Synergy\Project\Web\Template\TwigTemplate;
+use Synergy\View\SmartyTemplate;
+use Synergy\View\TwigTemplate;
 use Synergy\Project\Web\WebResponse;
 
 
@@ -20,12 +20,12 @@ class TestController extends Controller
 
     public function fooAction($name)
     {
-        $template = new SmartyTemplate();
-        $template->setTemplateFile('foo.html.tpl');
-        return $template;
-//        $template = new TwigTemplate();
-//        $template->setTemplateFile('foo.html.twig');
+//        $template = new SmartyTemplate();
+//        $template->setTemplateFile('foo.html.tpl');
 //        return $template;
+        $template = new TwigTemplate();
+        $template->setTemplateFile('foo.html.twig');
+        return $template;
 //        return new WebResponse("Foo Here<br/>Hello $name");
     }
 

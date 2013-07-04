@@ -42,14 +42,20 @@ setlocale(LC_ALL, 'en_GB');
 
 
 /**
- * Synergy needs to know the directory that your virtualhost is pointing to
+ * Synergy will base all relative files and paths on this root
+ * This should be your main project directory (where your composer.json lives)
  */
-define('SYNERGY_WEB_ROOT', __DIR__);
+define('SYNERGY_ROOT_DIR', dirname(__DIR__));
 
 
 /**
  * Load composer autoload.php
  */
+if (!file_exists('../vendor/autoload.php')) {
+    die(
+        'Must install vendor libraries using compose - see README.md'
+    );
+}
 require_once('../vendor/autoload.php');
 
 
@@ -67,7 +73,7 @@ register_shutdown_function('Synergy\ExceptionHandler::ShutdownHandler');
 /**
  * Create a Talkback collection
  */
-$logger = \Talkback\Logger::getLogger('bundle logger');
+$logger = \Talkback\Logger::getLogger('logger');
 $logger
     ->addChannel(
         array(
@@ -94,7 +100,6 @@ $project =
         $logger
     );
 $project->setDev(true);
-$project->setAppDir(dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'app');
-$project->setTempDir('/tmp');
-$project->setTemplateDir($project->getAppDir() . DIRECTORY_SEPARATOR . 'View');
+$project->setAppDir(SYNERGY_ROOT_DIR . DIRECTORY_SEPARATOR . 'app');
+$project->setConfigFilename($project->getAppDir() . DIRECTORY_SEPARATOR .'config'.DIRECTORY_SEPARATOR.'config.yml');
 $project->run();

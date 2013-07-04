@@ -1,4 +1,5 @@
 DirectoryIndex index.php
+ErrorDocument 404 index.php
 
 <IfModule mod_rewrite.c>
     RewriteEngine On

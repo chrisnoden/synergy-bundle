@@ -1,0 +1,5 @@
+synergy:
+    temp_dir: %app_dir%/temp
+    routes: %config_dir%/routes.yml
+    webproject:
+        template_dir: %app_dir%/templates
