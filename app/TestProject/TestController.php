@@ -46,4 +46,9 @@ class TestController extends Controller
         return '%CHello there%n';
     }
 
+    public function defaultAction()
+    {
+        return new WebResponse("Default Action Launched");
+    }
+
 }

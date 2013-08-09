@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "a464cda61e7c427212f375fdb60e60fc",
+    "hash": "5151849904766dd04e1c642fd9c31ba8",
     "packages": [
         {
             "name": "chrisnoden/synergy",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chrisnoden/synergy.git",
-                "reference": "90b93050dcf3da405e7a1963e9813ecdd0adfccf"
+                "reference": "dcdee7025c5f07d412c8248a7e54a0f1966f8750"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chrisnoden/synergy/zipball/90b93050dcf3da405e7a1963e9813ecdd0adfccf",
-                "reference": "90b93050dcf3da405e7a1963e9813ecdd0adfccf",
+                "url": "https://api.github.com/repos/chrisnoden/synergy/zipball/dcdee7025c5f07d412c8248a7e54a0f1966f8750",
+                "reference": "dcdee7025c5f07d412c8248a7e54a0f1966f8750",
                 "shasum": ""
             },
             "require": {
@@ -39,7 +39,7 @@
             "require-dev": {
                 "chrisnoden/talkback": "1.*",
                 "mobiledetect/mobiledetectlib": "2.6.*",
-                "propel/propel1": "1.6.*",
+                "propel/propel1": "dev-master",
                 "smarty/smarty": "3.1.*",
                 "twig/twig": "v1.13.1"
             },
@@ -78,7 +78,7 @@
                 "mvc",
                 "symfony"
             ],
-            "time": "2013-07-04 21:43:34"
+            "time": "2013-07-24 22:25:40"
         },
         {
             "name": "chrisnoden/talkback",
@@ -86,12 +86,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chrisnoden/talkback.git",
-                "reference": "v1.0.1"
+                "reference": "138b27edaa064198bf910e13d06d817da1338477"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chrisnoden/talkback/zipball/v1.0.1",
-                "reference": "v1.0.1",
+                "url": "https://api.github.com/repos/chrisnoden/talkback/zipball/138b27edaa064198bf910e13d06d817da1338477",
+                "reference": "138b27edaa064198bf910e13d06d817da1338477",
                 "shasum": ""
             },
             "require": {
@@ -141,7 +141,7 @@
                 "prowl",
                 "psr-3"
             ],
-            "time": "2013-07-03 16:24:56"
+            "time": "2013-07-19 15:17:45"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -290,21 +290,24 @@
         },
         {
             "name": "propel/propel1",
-            "version": "1.6.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chrisnoden/Propel.git",
-                "reference": "7b8597359b1048bdd7d2e2afa4731d17b01a1716"
+                "reference": "3346775edcf60a36f3ed8c8f553934009736a6f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chrisnoden/Propel/zipball/7b8597359b1048bdd7d2e2afa4731d17b01a1716",
-                "reference": "7b8597359b1048bdd7d2e2afa4731d17b01a1716",
+                "url": "https://api.github.com/repos/chrisnoden/Propel/zipball/3346775edcf60a36f3ed8c8f553934009736a6f6",
+                "reference": "3346775edcf60a36f3ed8c8f553934009736a6f6",
                 "shasum": ""
             },
             "require": {
                 "phing/phing": "~2.4",
                 "php": ">=5.2.4"
+            },
+            "require-dev": {
+                "pear-pear.php.net/pear_packagefilemanager2": "@stable"
             },
             "bin": [
                 "generator/bin/propel-gen",
@@ -313,7 +316,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6-dev"
+                    "dev-master": "1.7-dev"
                 }
             },
             "autoload": {
@@ -346,9 +349,9 @@
                 "persistence"
             ],
             "support": {
-                "source": "https://github.com/chrisnoden/Propel/tree/1.6"
+                "source": "https://github.com/chrisnoden/Propel/tree/master"
             },
-            "time": "2013-04-19 12:04:32"
+            "time": "2013-07-04 10:52:31"
         },
         {
             "name": "psr/log",
@@ -395,12 +398,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Config.git",
-                "reference": "v2.2.3"
+                "reference": "v2.2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Config/zipball/v2.2.3",
-                "reference": "v2.2.3",
+                "url": "https://api.github.com/repos/symfony/Config/zipball/v2.2.4",
+                "reference": "v2.2.4",
                 "shasum": ""
             },
             "require": {
@@ -433,7 +436,7 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "http://symfony.com",
-            "time": "2013-05-10 18:08:31"
+            "time": "2013-07-10 14:03:01"
         },
         {
             "name": "symfony/http-foundation",
@@ -442,12 +445,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation.git",
-                "reference": "v2.2.3"
+                "reference": "v2.2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/v2.2.3",
-                "reference": "v2.2.3",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/v2.2.4",
+                "reference": "v2.2.4",
                 "shasum": ""
             },
             "require": {
@@ -483,7 +486,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "http://symfony.com",
-            "time": "2013-06-13 12:48:26"
+            "time": "2013-07-15 12:12:07"
         },
         {
             "name": "symfony/routing",
@@ -492,12 +495,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Routing.git",
-                "reference": "844f21ea5370dcb58abd65dbc66b4849fb090c1d"
+                "reference": "v2.2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Routing/zipball/844f21ea5370dcb58abd65dbc66b4849fb090c1d",
-                "reference": "844f21ea5370dcb58abd65dbc66b4849fb090c1d",
+                "url": "https://api.github.com/repos/symfony/Routing/zipball/v2.2.4",
+                "reference": "v2.2.4",
                 "shasum": ""
             },
             "require": {
@@ -550,12 +553,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "v2.2.3"
+                "reference": "v2.2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/v2.2.3",
-                "reference": "v2.2.3",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/v2.2.4",
+                "reference": "v2.2.4",
                 "shasum": ""
             },
             "require": {
@@ -588,7 +591,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2013-05-10 18:08:31"
+            "time": "2013-07-11 09:28:01"
         },
         {
             "name": "wp-cli/php-cli-tools",
@@ -644,7 +647,9 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "chrisnoden/synergy": 20
+        "chrisnoden/synergy": 20,
+        "chrisnoden/talkback": 20,
+        "propel/propel1": 20
     },
     "platform": {
         "php": ">=5.3.21"

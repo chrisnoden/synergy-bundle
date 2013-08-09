@@ -19,9 +19,9 @@
     "require": {
         "php": ">=5.3.21",
         "chrisnoden/synergy": "dev-master",
-        "chrisnoden/talkback": ">=1.0.2",
+        "chrisnoden/talkback": "dev-master",
         "mobiledetect/mobiledetectlib": "2.6.*",
-        "propel/propel1": "1.6.*"
+        "propel/propel1": "dev-master"
     },
     "autoload": {
         "psr-0": { "TestProject": "app/" }

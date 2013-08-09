@@ -16,3 +16,15 @@ routeIOS:
 route1:
     path:     /foo/{name}
     defaults: { _controller: TestProject\TestController:foo }
+
+routeCatcher:
+    path:     /test/{suffix}
+    defaults: { _controller: TestProject\CleverController }
+    requirements:
+        suffix: ".*"
+
+routeRoot:
+    path:     /{suffix}
+    defaults: { _controller: TestProject\TestController }
+    requirements:
+        suffix: ".*"
