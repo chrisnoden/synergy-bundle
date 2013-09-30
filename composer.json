@@ -1,19 +1,14 @@
 {
-    "name": "chrisnoden/synergy-bundle",
     "type": "project",
-    "description": "Synergy MVC Framework Bundle",
-    "keywords": ["mvc", "framework", "symfony"],
-    "homepage": "https://github.com/chrisnoden/synergy-bundle",
-    "license": "Apache-2.0",
-    "version": "0.2.0-dev",
     "minimum-stability": "dev",
-    "authors": [
-        { "name": "Chris Noden", "email": "chris.noden@gmail.com", "homepage": "http://www.chrisnoden.com" }
-    ],
     "repositories": [
         {
             "type": "vcs",
             "url": "https://github.com/chrisnoden/Propel"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/chrisnoden/php-cli-tools"
         }
     ],
     "require": {
@@ -27,16 +22,13 @@
     },
     "scripts": {
         "post-root-package-install": [
-            "SynergyBundle\\Scripts\\Init::postRootPackageInstall"
+            "Synergy\\Tools\\Init::postRootPackageInstall"
         ],
         "post-install-cmd": [
-            "SynergyBundle\\Scripts\\Init::postInstallCmd"
+            "Synergy\\Tools\\Init::postInstallCmd"
         ],
         "post-update-cmd": [
-            "SynergyBundle\\Scripts\\Init::postUpdateCmd"
+            "Synergy\\Tools\\Init::postUpdateCmd"
         ]
-    },
-    "autoload": {
-        "psr-0": { "SynergyBundle": "src/" }
     }
 }

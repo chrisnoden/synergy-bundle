@@ -24,5 +24,7 @@
  * @link      https://github.com/chrisnoden
  */
 
-
+/**
+ * This file will be included when your project is launched by Synergy
+ */
 

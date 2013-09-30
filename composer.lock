@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "984a4eb1e4a83bdd769cad60b056a74f",
+    "hash": "12b075029b4cf05b65d88d4b0a2e1479",
     "packages": [
         {
             "name": "chrisnoden/synergy",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chrisnoden/synergy.git",
-                "reference": "4003720b6959e307e9888f951b19d257f65717c3"
+                "reference": "09c9930ab23654c4960423c9ac78fbd3c69de6eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chrisnoden/synergy/zipball/4003720b6959e307e9888f951b19d257f65717c3",
-                "reference": "4003720b6959e307e9888f951b19d257f65717c3",
+                "url": "https://api.github.com/repos/chrisnoden/synergy/zipball/09c9930ab23654c4960423c9ac78fbd3c69de6eb",
+                "reference": "09c9930ab23654c4960423c9ac78fbd3c69de6eb",
                 "shasum": ""
             },
             "require": {
@@ -78,7 +78,7 @@
                 "mvc",
                 "symfony"
             ],
-            "time": "2013-09-26 14:25:41"
+            "time": "2013-09-30 15:57:59"
         },
         {
             "name": "chrisnoden/talkback",
