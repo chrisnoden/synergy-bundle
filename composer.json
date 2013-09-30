@@ -5,7 +5,7 @@
     "keywords": ["mvc", "framework", "symfony"],
     "homepage": "https://github.com/chrisnoden/synergy-bundle",
     "license": "Apache-2.0",
-    "version": "0.1.0-dev",
+    "version": "0.2.0-dev",
     "minimum-stability": "dev",
     "authors": [
         { "name": "Chris Noden", "email": "chris.noden@gmail.com", "homepage": "http://www.chrisnoden.com" }
@@ -21,9 +21,22 @@
         "chrisnoden/synergy": "dev-master",
         "chrisnoden/talkback": "dev-master",
         "mobiledetect/mobiledetectlib": "2.6.*",
+        "smarty/smarty": "3.1.*",
+        "jlogsdon/cli": "dev-master",
         "propel/propel1": "dev-master"
     },
+    "scripts": {
+        "post-root-package-install": [
+            "SynergyBundle\\Scripts\\Init::postRootPackageInstall"
+        ],
+        "post-install-cmd": [
+            "SynergyBundle\\Scripts\\Init::postInstallCmd"
+        ],
+        "post-update-cmd": [
+            "SynergyBundle\\Scripts\\Init::postUpdateCmd"
+        ]
+    },
     "autoload": {
-        "psr-0": { "TestProject": "app/" }
+        "psr-0": { "SynergyBundle": "src/" }
     }
 }

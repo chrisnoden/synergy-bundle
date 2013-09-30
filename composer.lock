@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "5151849904766dd04e1c642fd9c31ba8",
+    "hash": "984a4eb1e4a83bdd769cad60b056a74f",
     "packages": [
         {
             "name": "chrisnoden/synergy",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chrisnoden/synergy.git",
-                "reference": "dcdee7025c5f07d412c8248a7e54a0f1966f8750"
+                "reference": "4003720b6959e307e9888f951b19d257f65717c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chrisnoden/synergy/zipball/dcdee7025c5f07d412c8248a7e54a0f1966f8750",
-                "reference": "dcdee7025c5f07d412c8248a7e54a0f1966f8750",
+                "url": "https://api.github.com/repos/chrisnoden/synergy/zipball/4003720b6959e307e9888f951b19d257f65717c3",
+                "reference": "4003720b6959e307e9888f951b19d257f65717c3",
                 "shasum": ""
             },
             "require": {
@@ -27,21 +27,21 @@
                 "ext-posix": "*",
                 "ext-reflection": "*",
                 "ext-spl": "*",
+                "jlogsdon/cli": "dev-master",
                 "mustangostang/spyc": "0.5.1",
                 "php": ">=5.3.21",
                 "psr/log": "1.0.0",
                 "symfony/config": "2.2.*",
                 "symfony/http-foundation": "2.2.*",
                 "symfony/routing": "2.2.*",
-                "symfony/yaml": "2.2.*",
-                "wp-cli/php-cli-tools": "0.9.*"
+                "symfony/yaml": "2.2.*"
             },
             "require-dev": {
-                "chrisnoden/talkback": "1.*",
-                "mobiledetect/mobiledetectlib": "2.6.*",
+                "chrisnoden/talkback": "dev-master",
+                "mobiledetect/mobiledetectlib": "dev-master",
                 "propel/propel1": "dev-master",
                 "smarty/smarty": "3.1.*",
-                "twig/twig": "v1.13.1"
+                "twig/twig": "1.13.*"
             },
             "suggest": {
                 "chrisnoden/talkback": ">=1.0.1",
@@ -78,7 +78,7 @@
                 "mvc",
                 "symfony"
             ],
-            "time": "2013-07-24 22:25:40"
+            "time": "2013-09-26 14:25:41"
         },
         {
             "name": "chrisnoden/talkback",
@@ -86,12 +86,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/chrisnoden/talkback.git",
-                "reference": "138b27edaa064198bf910e13d06d817da1338477"
+                "reference": "061dffa90765db845a72301e1fdb713bb9d0bea5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chrisnoden/talkback/zipball/138b27edaa064198bf910e13d06d817da1338477",
-                "reference": "138b27edaa064198bf910e13d06d817da1338477",
+                "url": "https://api.github.com/repos/chrisnoden/talkback/zipball/061dffa90765db845a72301e1fdb713bb9d0bea5",
+                "reference": "061dffa90765db845a72301e1fdb713bb9d0bea5",
                 "shasum": ""
             },
             "require": {
@@ -106,7 +106,7 @@
             },
             "require-dev": {
                 "wp-cli/php-cli-tools": "dev-master",
-                "xenji/prowlphp": "1.*"
+                "xenji/prowlphp": "dev-master"
             },
             "suggest": {
                 "wp-cli/php-cli-tools": "dev-master",
@@ -141,30 +141,81 @@
                 "prowl",
                 "psr-3"
             ],
-            "time": "2013-07-19 15:17:45"
+            "time": "2013-08-17 23:24:41"
         },
         {
-            "name": "mobiledetect/mobiledetectlib",
-            "version": "2.6.3",
+            "name": "jlogsdon/cli",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/serbanghita/Mobile-Detect.git",
-                "reference": "2.6.3"
+                "url": "https://github.com/jlogsdon/php-cli-tools.git",
+                "reference": "e5d20d447b97a0b9d6a40bcd40307e2173d2e3a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/2.6.3",
-                "reference": "2.6.3",
+                "url": "https://api.github.com/repos/jlogsdon/php-cli-tools/zipball/e5d20d447b97a0b9d6a40bcd40307e2173d2e3a0",
+                "reference": "e5d20d447b97a0b9d6a40bcd40307e2173d2e3a0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "cli": "lib/"
+                },
+                "files": [
+                    "lib/cli/cli.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Logsdon",
+                    "email": "jlogsdon@php.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Console utilities for PHP",
+            "homepage": "http://github.com/jlogsdon/php-cli-tools",
+            "keywords": [
+                "cli",
+                "console"
+            ],
+            "time": "2013-07-08 21:20:00"
+        },
+        {
+            "name": "mobiledetect/mobiledetectlib",
+            "version": "2.6.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/serbanghita/Mobile-Detect.git",
+                "reference": "655ff33361b3abc37ec670cdf1f3b679c8738985"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/655ff33361b3abc37ec670cdf1f3b679c8738985",
+                "reference": "655ff33361b3abc37ec670cdf1f3b679c8738985",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.0.0"
             },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
             "type": "library",
             "autoload": {
                 "classmap": [
                     "Mobile_Detect.php"
-                ]
+                ],
+                "psr-0": {
+                    "Detection": "namespaced/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -187,7 +238,7 @@
                 "mobile detector",
                 "php mobile detect"
             ],
-            "time": "2013-07-03 16:20:06"
+            "time": "2013-08-27 13:41:11"
         },
         {
             "name": "mustangostang/spyc",
@@ -238,16 +289,16 @@
         },
         {
             "name": "phing/phing",
-            "version": "2.5.0",
+            "version": "2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phingofficial/phing.git",
-                "reference": "2.5.0"
+                "reference": "3f7d71bf561bafea39087250f777b349438cc32e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phingofficial/phing/zipball/2.5.0",
-                "reference": "2.5.0",
+                "url": "https://api.github.com/repos/phingofficial/phing/zipball/3f7d71bf561bafea39087250f777b349438cc32e",
+                "reference": "3f7d71bf561bafea39087250f777b349438cc32e",
                 "shasum": ""
             },
             "require": {
@@ -286,7 +337,7 @@
                 "task",
                 "tool"
             ],
-            "time": "2013-02-16 14:23:57"
+            "time": "2013-08-26 21:13:03"
         },
         {
             "name": "propel/propel1",
@@ -392,18 +443,62 @@
             "time": "2012-12-21 11:40:51"
         },
         {
+            "name": "smarty/smarty",
+            "version": "v3.1.14",
+            "source": {
+                "type": "svn",
+                "url": "http://smarty-php.googlecode.com/svn",
+                "reference": "/tags/v3.1.14/@4752"
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "distribution/libs/Smarty.class.php",
+                    "distribution/libs/SmartyBC.class.php",
+                    "distribution/libs/sysplugins/smarty_security.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Monte Ohrt",
+                    "email": "monte@ohrt.com"
+                },
+                {
+                    "name": "Uwe Tews",
+                    "email": "uwe.tews@googlemail.com"
+                },
+                {
+                    "name": "Rodney Rehm",
+                    "email": "rodney.rehm@medialize.de"
+                }
+            ],
+            "description": "Smarty - the compiling PHP template engine",
+            "homepage": "http://www.smarty.net",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2013-07-02 16:38:47"
+        },
+        {
             "name": "symfony/config",
             "version": "2.2.x-dev",
             "target-dir": "Symfony/Component/Config",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Config.git",
-                "reference": "v2.2.4"
+                "reference": "c435380fbd9d49055c16375db5d767f089a95045"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Config/zipball/v2.2.4",
-                "reference": "v2.2.4",
+                "url": "https://api.github.com/repos/symfony/Config/zipball/c435380fbd9d49055c16375db5d767f089a95045",
+                "reference": "c435380fbd9d49055c16375db5d767f089a95045",
                 "shasum": ""
             },
             "require": {
@@ -436,7 +531,7 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "http://symfony.com",
-            "time": "2013-07-10 14:03:01"
+            "time": "2013-09-19 09:36:05"
         },
         {
             "name": "symfony/http-foundation",
@@ -445,12 +540,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation.git",
-                "reference": "v2.2.4"
+                "reference": "b59d59ecda27f05cbb2ff80a52bca4081251c0e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/v2.2.4",
-                "reference": "v2.2.4",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/b59d59ecda27f05cbb2ff80a52bca4081251c0e4",
+                "reference": "b59d59ecda27f05cbb2ff80a52bca4081251c0e4",
                 "shasum": ""
             },
             "require": {
@@ -486,7 +581,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "http://symfony.com",
-            "time": "2013-07-15 12:12:07"
+            "time": "2013-09-23 08:18:01"
         },
         {
             "name": "symfony/routing",
@@ -495,12 +590,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Routing.git",
-                "reference": "v2.2.4"
+                "reference": "8d9821794f7192d43b76737edb94a817949a5579"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Routing/zipball/v2.2.4",
-                "reference": "v2.2.4",
+                "url": "https://api.github.com/repos/symfony/Routing/zipball/8d9821794f7192d43b76737edb94a817949a5579",
+                "reference": "8d9821794f7192d43b76737edb94a817949a5579",
                 "shasum": ""
             },
             "require": {
@@ -544,7 +639,7 @@
             ],
             "description": "Symfony Routing Component",
             "homepage": "http://symfony.com",
-            "time": "2013-06-23 06:56:04"
+            "time": "2013-09-26 19:07:06"
         },
         {
             "name": "symfony/yaml",
@@ -553,12 +648,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "v2.2.4"
+                "reference": "bb697b6617b90c91b2a65d24ce32035afe5e3418"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/v2.2.4",
-                "reference": "v2.2.4",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/bb697b6617b90c91b2a65d24ce32035afe5e3418",
+                "reference": "bb697b6617b90c91b2a65d24ce32035afe5e3418",
                 "shasum": ""
             },
             "require": {
@@ -591,52 +686,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2013-07-11 09:28:01"
-        },
-        {
-            "name": "wp-cli/php-cli-tools",
-            "version": "v0.9.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wp-cli/php-cli-tools.git",
-                "reference": "v0.9.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/php-cli-tools/zipball/v0.9.4",
-                "reference": "v0.9.4",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">= 5.3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "cli": "lib/"
-                },
-                "files": [
-                    "lib/cli/cli.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "James Logsdon",
-                    "email": "jlogsdon@php.net",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Console utilities for PHP",
-            "homepage": "http://github.com/jlogsdon/php-cli-tools",
-            "keywords": [
-                "cli",
-                "console"
-            ],
-            "time": "2013-06-17 19:40:15"
+            "time": "2013-09-22 17:30:19"
         }
     ],
     "packages-dev": [
@@ -649,6 +699,7 @@
     "stability-flags": {
         "chrisnoden/synergy": 20,
         "chrisnoden/talkback": 20,
+        "jlogsdon/cli": 20,
         "propel/propel1": 20
     },
     "platform": {

@@ -1,11 +1,10 @@
-# vendor directoris
+# vendor directories
 vendor/*
 
-# IDE Files
-.idea
-
 # temp files
+app/temp/*
 *.cache
 
-# logs
+# log
+app/logs/*
 *.log
