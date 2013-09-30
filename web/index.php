@@ -126,8 +126,7 @@ $logger
             \Psr\Log\LogLevel::DEBUG
         ),
         \Talkback\Channel\ChannelFactory::File(SYNERGY_LOG_FILENAME))
-    ->addChannel(\Psr\Log\LogLevel::CRITICAL, \Talkback\Channel\ChannelFactory::Basic())
-    ->addChannel(\Psr\Log\LogLevel::INFO, \Talkback\Channel\ChannelFactory::Growl('Bundle'));
+    ->addChannel(\Psr\Log\LogLevel::CRITICAL, \Talkback\Channel\ChannelFactory::Basic());
 
 /**
  * @var \Synergy\Project\Web\WebProject $project
